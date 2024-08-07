@@ -84,7 +84,7 @@ const Menu = () => {
             {menuItems.map((item, index) => {
               const {name, description, price, imgSrc} = item;
               return (
-                <MenuItem name={name} description={description} price={price} imgSrc={imgSrc} index={index} />
+                <MenuItem name={name} description={description} price={price} imgSrc={imgSrc} key={index} />
               )
             })}
           </div>
